@@ -1,0 +1,24 @@
+Remember
+
+for Ethernet shield using W5200 change following file:
+..mySensors/utility/RF24_config.h
+at Line: 28
+//#define SOFTSPI
+became
+#define SOFTSPI
+
+for all other shields the file:
+..mySensors/utility/RF24_config.h
+at Line: 28
+must be
+//#define SOFTSPI
+
+
+if you want change level
+modify following file:
+mySensors/utility/RF24.cpp
+
+at LINE: 428
+change power level deleting comment sign //
+
+
